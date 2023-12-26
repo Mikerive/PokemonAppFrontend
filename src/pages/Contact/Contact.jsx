@@ -15,20 +15,20 @@ const teamMembers = [
   },
   {
     name: 'Michael Rivera',
-    position: '---',
-    location: '---',
+    position: 'Senior, Computer Science',
+    location: 'New York, NY',
     imageUrl: testImage2
   },
   {
     name: 'Jhon Guzman',
-    position: '---',
-    location: '---',
+    position: 'Senior Computer Science \n Duck',
+    location: 'New York / Cerulean City',
     imageUrl: testImage3
   },
   {
     name: 'Ivan Chen',
-    position: '',
-    location: '---',
+    position: 'Junior, Computer Science',
+    location: 'Merry Christmas',
     imageUrl: testImage4
   }
 ];

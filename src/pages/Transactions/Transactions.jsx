@@ -32,6 +32,20 @@ const Transactions = () => {
   const handlePurchase = async () => {
     console.log('Purchase clicked, process the transaction');
     // Implement purchase functionality
+    try {
+      const response = await fetch(`https://pokemonappbackend.michaelrivera15.repl.co/transaction/finish_transaction`, {
+        method: 'POST',
+        credentials: 'include',
+        mode: 'cors',
+      });
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      console.log('Purchase Complete!');
+      window.location.reload();
+    } catch (error) {
+      console.error('Error fetching data: ', error);
+    }
   };
 
   return (
